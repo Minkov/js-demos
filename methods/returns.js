@@ -1,18 +1,19 @@
 const sum = (numbers) => {
     if (!Array.isArray(numbers)) {
         console.log('Not an array');
-    } else {
-        let sum = 0;
-
-        for (const number of numbers) {
-            sum += number;
-        }
-
-        return sum;
+        return null;
     }
+
+    let theSum = 0;
+
+    for (const number of numbers) {
+        theSum += number;
+    }
+
+    return theSum;
 };
 
-const numbers = [1, 2, 3, ];
+const numbers = [1, 2, 3];
 
 const theSum = sum(numbers);
 console.log(sum(numbers));
